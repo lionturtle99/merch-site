@@ -12,39 +12,37 @@ function ItemForm(props) {
   }
 
   return (
-    <React.Fragment>
-      <Form onSubmit={handleNewItemFormSubmission}>
-        <h6 className="text-center my-2">Add new Item</h6>
-        <Form.Control
-          type='text'
-          name='title'
-          placeholder='Item Name'
-          className="mb-3 shadow-sm"
-          required="required" />
-        <Form.Control
-          as='textarea'
-          rows={4}
-          name='description'
-          placeholder='Description'
-          className="mb-3 shadow-sm" 
-          required="required"/>
-        <Form.Control
-          type='number'
-          min='1'
-          max='15000'
-          name='inventory'
-          placeholder='Inventory'
-          className="mb-3 shadow-sm" 
-          required="required"/>
-        <Form.Control
-          type='text'
-          name='imageURL'
-          placeholder='Image URL'
-          className="mb-3 shadow-sm" 
-          required="required"/>
-        <Button variant="dark" size="sm" type="submit" className="px-4 rounded-pill shadow-sm">Zubmit</Button>
-      </Form>
-    </React.Fragment>
+    <Form onSubmit={handleNewItemFormSubmission}>
+      <h6 className="text-center my-2">Add new Item</h6>
+      <Form.Control
+        type='text'
+        name='title'
+        placeholder='Item Name'
+        className="mb-3 shadow-sm"
+        required="required" />
+      <Form.Control
+        as='textarea'
+        rows={4}
+        name='description'
+        placeholder='Description'
+        className="mb-3 shadow-sm" 
+        required="required"/>
+      <Form.Control
+        type='number'
+        min='1'
+        max='15000'
+        name='inventory'
+        placeholder='Inventory'
+        className="mb-3 shadow-sm" 
+        required="required"/>
+      <Form.Control
+        type='text'
+        name='imageURL'
+        placeholder='Image URL'
+        className="mb-3 shadow-sm" 
+        required="required"/>
+      <Button variant="dark" size="sm" type="submit" className="px-4 rounded-pill shadow-sm">Zubmit</Button>
+    </Form>
   );
 }
 

@@ -21,7 +21,7 @@ function Header() {
             >
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#action2">Book Us</Nav.Link>
+              <Nav.Link href="#action3">Book Us</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
